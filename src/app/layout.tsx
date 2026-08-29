@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Save Dallas",
     url: "https://savedallas.com",
-    title: "Save Dallas | Demand Smart Fiscal Stewardship at City Hall",
+    title: "Save Dallas",
     description:
       "Join Dallas residents and business owners demanding smart fiscal stewardship at City Hall. Register to speak at the September 2 public hearing.",
     locale: "en_US",
