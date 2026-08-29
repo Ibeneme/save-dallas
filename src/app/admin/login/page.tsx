@@ -1,6 +1,8 @@
 import AdminLoginContent from "@/components/admin/AdminLoginContent";
 import { Suspense } from "react";
 
+export const dynamic = "force-dynamic";
+
 export default function AdminLoginPage() {
   return (
     <Suspense

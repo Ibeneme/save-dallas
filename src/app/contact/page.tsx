@@ -1,14 +1,18 @@
+import { Suspense } from "react";
 import RegisterFormSection from "@/components/contact/contact";
 import StandUpSection from "@/components/home/StandUpSection";
-import React from "react";
 
-const page = () => {
+export const dynamic = "force-dynamic";
+
+const Page = () => {
   return (
     <div>
-      <RegisterFormSection />
+      <Suspense fallback={null}>
+        <RegisterFormSection />
+      </Suspense>
       <StandUpSection />
     </div>
   );
 };
 
-export default page;
+export default Page;

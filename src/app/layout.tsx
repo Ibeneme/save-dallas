@@ -4,6 +4,7 @@ import Navbar from "@/components/navbar/navbar";
 import Footer from "@/components/footer/Footer";
 import "./globals.css";
 import ScrollToTop from "@/components/ScrollToTop/ScrollToTop";
+import { Suspense } from "react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -43,7 +44,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://savedallas.com",
   },
-  // Reverted asset mappings back to pull the logo image directly from your public/vite.png target
   icons: {
     icon: "/vite.png",
     apple: "/vite.png",
@@ -79,7 +79,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // Structured data (JSON-LD) for the local civic event
   const eventJsonLd = {
     "@context": "https://schema.org",
     "@type": "Event",
@@ -122,10 +121,16 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full flex flex-col bg-white text-slate-900">
-        <ScrollToTop />
-        <Navbar />
-        <main className="flex-1 flex flex-col">{children}</main>
-        <Footer />
+        <Suspense fallback={null}>
+          <ScrollToTop />
+          <Navbar />
+        </Suspense>
+        <main className="flex-1 flex flex-col">
+          <Suspense fallback={null}>{children}</Suspense>
+        </main>
+        <Suspense fallback={null}>
+          <Footer />
+        </Suspense>
       </body>
     </html>
   );
