@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://savedallas.com"),
   title: {
-    default: "Save Dallas | Demand Smart Fiscal Stewardship at City Hall",
+    default: "Save Dallas | Save Dallas",
     template: "%s | Save Dallas",
   },
   description:
