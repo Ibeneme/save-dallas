@@ -4,6 +4,8 @@ import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
 import { motion, type Variants } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
+import logo from "@/assets/vite.png";
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -251,10 +253,16 @@ export default function Footer() {
         viewport={{ once: true, amount: 0.3 }}
         className="relative mx-auto max-w-7xl px-6 pt-16 lg:px-8"
       >
+        <Image
+          src={logo}
+          alt="Save Dallas Logo"
+          className="-my-6 h-24 w-auto object-contain sm:-my-8 sm:h-32 rounded-b-[120px]"
+          priority
+        />
         <div className="grid grid-cols-1 gap-12 border-b border-white/10 pb-12 sm:grid-cols-2 lg:grid-cols-[1.2fr_0.8fr_0.8fr_1fr]">
           {/* Brand + mission */}
           <motion.div variants={itemVariants} className="max-w-sm">
-            <p className="hero-display text-xl font-bold tracking-tight text-white">
+            <p className="hero-display mt-[48px] text-xl font-bold tracking-tight text-white">
               Save Dallas
             </p>
             <p className="hero-body mt-4 text-[14.5px] leading-[1.7] text-white/55">
