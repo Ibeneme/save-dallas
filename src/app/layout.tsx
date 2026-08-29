@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://savedallas.com"),
   title: {
-    default: "Save Dallas | Save Dallas",
+    default: "Save Dallas | Stand Up, Dallas. Save Our Future!",
     template: "%s | Save Dallas",
   },
   description:
@@ -50,9 +50,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    siteName: "Save Dallas",
+    siteName: "Stand Up, Dallas. Save Our Future",
     url: "https://savedallas.com",
-    title: "Save Dallas",
+    title: "Stand Up, Dallas. Save Our Future!",
     description:
       "Join Dallas residents and business owners demanding smart fiscal stewardship at City Hall. Register to speak at the September 2 public hearing.",
     locale: "en_US",
