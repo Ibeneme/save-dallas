@@ -86,6 +86,10 @@ export default function RootLayout({
     description:
       "A public hearing where Dallas residents and business owners can register to speak to the City Council about smart fiscal stewardship at City Hall.",
     startDate: "2026-09-02T00:00:00-05:00",
+    url: "https://savedallas.com",
+    logo: "https://savedallas.com/vite.png",
+    image: "https://savedallas.com/vite.png",
+   
     eventAttendanceMode: "https://schema.org",
     eventStatus: "https://schema.org",
     location: {
