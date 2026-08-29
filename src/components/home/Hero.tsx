@@ -330,13 +330,12 @@ export default function HeroSection() {
               className="absolute inset-y-4 left-[10%] right-[10%] overflow-hidden bg-[#031C4B]"
               style={{ clipPath: "polygon(6% 0%, 94% 0%, 80% 100%, 20% 100%)" }}
             >
-              <video
+   <video
                 ref={videoRef}
                 autoPlay
                 loop
                 muted
                 playsInline
-                // @ts-expect-error webkit-playsinline needed for older iOS Safari
                 webkit-playsinline="true"
                 preload="metadata"
                 disablePictureInPicture
