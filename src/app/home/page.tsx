@@ -17,7 +17,7 @@ const HomePage = () => {
       <RealitySection />
       <OpportunitySection />
       <StakeSection />
-      <TakeActionSection />
+      {/* <TakeActionSection /> */}
       <StandUpSection />
     </div>
   );

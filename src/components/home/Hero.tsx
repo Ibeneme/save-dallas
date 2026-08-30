@@ -55,18 +55,18 @@ const weekStrip = [
 ];
 
 const docketRows = [
-  {
-    icon: Calendar,
-    text: "Speak in person or register to join virtually",
-  },
+  // {
+  //   icon: Calendar,
+  //   text: "Speak in person or register to join virtually",
+  // },
   {
     icon: MapPin,
     text: "1500 Marilla St., Room 5D — Dallas City Hall",
   },
-  {
-    icon: Users,
-    text: "Written comments accepted through Mon., Sept. 1",
-  },
+  // {
+  //   icon: Users,
+  //   text: "Written comments accepted through Mon., Sept. 1",
+  // },
 ];
 
 export default function HeroSection() {
@@ -210,10 +210,10 @@ export default function HeroSection() {
               variants={itemVariants}
               className="hero-display mt-7 text-[2.75rem] font-bold leading-[0.98] tracking-tight text-[#031C4B] sm:text-6xl lg:text-[4.25rem]"
             >
-              Stand Up,
-              <br />
+              {/* Stand Up,
+              <br /> */}
               <span className="inline-flex flex-wrap items-center gap-3">
-                Dallas!
+              Save   Dallas!
                 <span className="flex -space-x-3">
                   <span className="flex h-11 w-11 items-center justify-center rounded-full border-4 border-[#F4F8FF] bg-[#031C4B] text-white sm:h-12 sm:w-12">
                     <Landmark size={18} />
@@ -227,7 +227,7 @@ export default function HeroSection() {
                 </span>
               </span>
               <br />
-              Save Our <span className="text-[#0F6DF9]">Future.</span>
+              {/* Save Our <span className="text-[#0F6DF9]">Future.</span> */}
             </motion.h1>
 
             {/* Supporting copy */}
@@ -240,39 +240,46 @@ export default function HeroSection() {
               into an aging, deteriorating City Hall, or sell the property to
               secure a brighter economic future.
             </motion.p>
-            <motion.p
+            {/* <motion.p
               variants={itemVariants}
               className="hero-body mt-4 max-w-xl text-base leading-relaxed text-[#031C4B]/70 sm:text-lg"
             >
               Urge the Council to choose people over property — and protect our
               local economy, municipal budget, downtown workforce, and future
               entertainment options.
-            </motion.p>
+            </motion.p> */}
 
             {/* CTAs */}
             <motion.div
               variants={itemVariants}
               className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4"
             >
-              <a
-                href="#take-action"
-                className="hero-body group inline-flex items-center gap-2 rounded-full bg-[#031C4B] px-7 py-3.5 text-[15px] font-semibold text-white transition-colors duration-200 hover:bg-[#0F6DF9] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0F6DF9] focus-visible:ring-offset-2"
-              >
-                Register to Speak
-                <ArrowRight
-                  size={16}
-                  className="transition-transform duration-200 group-hover:translate-x-1"
-                />
-              </a>
+              {/*  <a
+              //   href="#take-action"
+              //   className="hero-body group inline-flex items-center gap-2 rounded-full bg-[#031C4B] px-7 py-3.5 text-[15px] font-semibold text-white transition-colors duration-200 hover:bg-[#0F6DF9] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0F6DF9] focus-visible:ring-offset-2"
+              // >
+              //   Register to Speak
+              //   <ArrowRight
+              //     size={16}
+              //     className="transition-transform duration-200 group-hover:translate-x-1"
+              //   />
+              // </a>
 
               <a
                 href="#reality"
                 className="hero-body text-[15px] font-semibold text-[#031C4B] underline decoration-[#094EA1]/50 decoration-2 underline-offset-4 transition-colors hover:text-[#094EA1] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0F6DF9] focus-visible:ring-offset-2"
               >
                 Read the Full Brief
-              </a>
+              </a> 
 
               <a
+                href="tel:2146703738"
+                className="hero-mono inline-flex items-center gap-2 rounded-full border border-[#094EA1]/25 px-5 py-3 text-sm font-medium text-[#094EA1] transition-colors hover:border-[#0F6DF9] hover:text-[#0F6DF9] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0F6DF9] focus-visible:ring-offset-2"
+              >
+                <Phone size={15} />
+                214.670.3738
+              </a>*/}
+                   <a
                 href="tel:2146703738"
                 className="hero-mono inline-flex items-center gap-2 rounded-full border border-[#094EA1]/25 px-5 py-3 text-sm font-medium text-[#094EA1] transition-colors hover:border-[#0F6DF9] hover:text-[#0F6DF9] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0F6DF9] focus-visible:ring-offset-2"
               >
@@ -283,7 +290,7 @@ export default function HeroSection() {
           </motion.div>
 
           {/* Trust line */}
-          <motion.div
+          {/* <motion.div
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
@@ -312,7 +319,7 @@ export default function HeroSection() {
               </span>
               .
             </motion.p>
-          </motion.div>
+          </motion.div> */}
         </div>
 
         {/* ---------------- Right: visual ---------------- */}

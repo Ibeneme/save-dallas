@@ -187,7 +187,7 @@ export default function Navbar() {
                   <Phone size={13} />
                   214-670-3738
                 </a>
-                <Link
+                {/* <Link
                   href="/contact"
                   onClick={() => setIsMobileOpen(false)}
                   className="sd-body group inline-flex items-center gap-1.5 rounded-full bg-[#031C4B] px-5 py-2.5 text-[13px] font-semibold text-white shadow-md shadow-[#031C4B]/20 transition-colors hover:bg-[#0F6DF9] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0F6DF9] focus-visible:ring-offset-2"
@@ -197,7 +197,7 @@ export default function Navbar() {
                     size={14}
                     className="transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                   />
-                </Link>
+                </Link> */}
               </div>
 
               {/* Mobile Menu Button */}
@@ -268,14 +268,14 @@ export default function Navbar() {
               </nav>
 
               <div className="mt-auto flex flex-col gap-3 border-t border-white/10 pt-6">
-                <Link
+                {/* <Link
                   href="/contact"
                   onClick={() => setIsMobileOpen(false)}
                   className="sd-body flex items-center justify-center gap-2 rounded-full bg-[#0F6DF9] px-5 py-3.5 text-[15px] font-semibold text-white shadow-lg transition-colors hover:bg-white hover:text-[#031C4B]"
                 >
                   Register to Speak
                   <ArrowUpRight size={16} />
-                </Link>
+                </Link> */}
                 <a
                   href="tel:2146703738"
                   className="sd-mono flex items-center justify-center gap-2 rounded-full border border-white/20 px-5 py-3 text-sm font-medium text-white/80 transition-colors hover:border-white/40 hover:text-white"

@@ -33,7 +33,7 @@ const navLinks = [
 
 const pageLinks = [
   { label: "Home", href: "/" },
-  { label: "Register Online", href: "/contact" },
+  // { label: "Register Online", href: "/contact" },
 ];
 
 /* ─── Inline SVGs ─── */
