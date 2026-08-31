@@ -213,7 +213,7 @@ export default function HeroSection() {
               {/* Stand Up,
               <br /> */}
               <span className="inline-flex flex-wrap items-center gap-3">
-              Save   Dallas!
+                Save Dallas!
                 <span className="flex -space-x-3">
                   <span className="flex h-11 w-11 items-center justify-center rounded-full border-4 border-[#F4F8FF] bg-[#031C4B] text-white sm:h-12 sm:w-12">
                     <Landmark size={18} />
@@ -279,7 +279,7 @@ export default function HeroSection() {
                 <Phone size={15} />
                 214.670.3738
               </a>*/}
-                   <a
+              <a
                 href="tel:2146703738"
                 className="hero-mono inline-flex items-center gap-2 rounded-full border border-[#094EA1]/25 px-5 py-3 text-sm font-medium text-[#094EA1] transition-colors hover:border-[#0F6DF9] hover:text-[#0F6DF9] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0F6DF9] focus-visible:ring-offset-2"
               >
@@ -324,7 +324,7 @@ export default function HeroSection() {
 
         {/* ---------------- Right: visual ---------------- */}
         <div>
-          <div className="relative mx-auto h-[420px] w-full max-w-md sm:h-[500px] lg:h-[600px]">
+          <div className="relative mx-auto h-[320px] w-full max-w-md sm:h-[400px] lg:h-[320px]">
             {/* Soft gradient field behind the pyramid */}
             <div
               ref={bgRef}
@@ -334,10 +334,10 @@ export default function HeroSection() {
 
             {/* Video, clipped into Dallas City Hall's leaning, inverted-pyramid profile */}
             <div
-              className="absolute inset-y-4 left-[10%] right-[10%] overflow-hidden bg-[#031C4B]"
-              style={{ clipPath: "polygon(6% 0%, 94% 0%, 80% 100%, 20% 100%)" }}
+              className="absolute inset-y-2 left-[5%] right-[5%] overflow-hidden bg-[#031C4B] rounded-[32px]"
+             // style={{ clipPath: "polygon(6% 0%, 94% 0%, 80% 100%, 20% 100%)" }}
             >
-   <video
+              <video
                 ref={videoRef}
                 autoPlay
                 loop
@@ -361,14 +361,14 @@ export default function HeroSection() {
             </div>
 
             {/* Vertical agenda number, right edge — hidden on small screens to avoid crowding */}
-            <div className="absolute -right-2 top-1/2 hidden -translate-y-1/2 rotate-180 [writing-mode:vertical-rl] sm:flex sm:items-center sm:gap-3">
+            {/* <div className="absolute -right-2 top-1/2 hidden -translate-y-1/2 rotate-180 [writing-mode:vertical-rl] sm:flex sm:items-center sm:gap-3">
               <span className="hero-display text-4xl font-bold leading-none text-[#0F6DF9] lg:text-5xl">
                 Dallas
               </span>
               <span className="hero-mono text-[10px] uppercase tracking-[0.3em] text-[#031C4B]/50">
                 Council Agenda
               </span>
-            </div>
+            </div> */}
 
             {/* Blueprint grid, bottom-right corner */}
             <div
